@@ -4,10 +4,9 @@ public class Main {
         System.out.println("Домашняя работа");
         System.out.println();
 
-        Book grokAlgorithms = new Book("GrokAlgorithms", 2017, "Aditya Bhargava");
+        Book grokAlgorithms = new Book("GrokAlgorithms", 2017, new Author("Аditya", "Bhargava"));
         System.out.println("grokAlgorithms.name = " + grokAlgorithms.getName());
         System.out.println("grokAlgorithms.yearOfPublication = " + grokAlgorithms.getYearOfPublication());
-        System.out.println("grokAlgorithms.author = " + grokAlgorithms.getAuthor());
         grokAlgorithms.setYearOfPublication(2019);
         System.out.println("grokAlgorithms.getYearOfPublication() = " + grokAlgorithms.getYearOfPublication());
         Author aditya = new Author("Аditya", "Bhargava");
@@ -16,10 +15,9 @@ public class Main {
         System.out.println("bhargava.surname = " + bhargava.getSurname());
         System.out.println();
 
-        Book ivanhoe = new Book("Ivanhoe", 1817, "Walter Scott");
+        Book ivanhoe = new Book("Ivanhoe", 1817, new Author("Walter", "Scott"));
         System.out.println("ivanhoe.name = " + ivanhoe.getName());
         System.out.println("ivanhoe.yearOfPublication = " + ivanhoe.getYearOfPublication());
-        System.out.println("ivanhoe.author = " + ivanhoe.getAuthor());
         ivanhoe.setYearOfPublication(1825);
         System.out.println("ivanhoe.getYearOfPublication() = " + ivanhoe.getYearOfPublication());
         Author walter = new Author("Walter", "Scott");
@@ -28,10 +26,9 @@ public class Main {
         System.out.println("scott.surname = " + scott.getSurname());
         System.out.println();
         
-        Book threeMusketeers = new Book("ThreeMusketeers", 1844, "Alexander Dumas");
+        Book threeMusketeers = new Book("ThreeMusketeers", 1844, new Author("Alexander", "Dumas"));
         System.out.println("threeMusketeers.name = " + threeMusketeers.getName());
         System.out.println("threeMusketeers.yearOfPublication = " + threeMusketeers.getYearOfPublication());
-        System.out.println("threeMusketeers.author = " + threeMusketeers.getAuthor());
         Author alexander = new Author("Alexander", "Dumas");
         System.out.println("alexander.name = " + alexander.getName());
         Author dumas = new Author("Alexander", "Dumas");
